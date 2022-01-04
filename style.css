@@ -1,0 +1,98 @@
+html{ 
+     margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    height: 12%;
+    width: 100%;
+    background-color: #7f5539;
+    margin: 0;
+    
+
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+    border: black 2px solid;
+    border-right: black 1px solid;
+}
+
+.logo i{
+    color: white;
+    font-size: 3em;
+    margin-left: 7%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+}
+    
+
+
+.nav-h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 60%;
+    display: flex;
+    border: black 2px solid;
+    border-left: black 1px solid;
+
+}
+
+.nav-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-li i{
+    margin: 3%;
+    color: white;
+}
+
+.nav-li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.loginbar{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.loginbar button{
+    background-color: #7f5539;
+    width: 40%;
+    height: 30%;
+    color: white;
+    border: white 2px ridge;
+    cursor: pointer;
+}
