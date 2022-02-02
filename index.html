@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/4a393ef5a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Neonderthaw&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
     <title>Proyecto Cafeteria</title>
 </head>
 <body>
@@ -17,20 +21,70 @@
         </div>
         <div class="navbar">
             <ul class="nav-ul">
-                <li class="nav-li"><i class="fas fa-home"></i><a href="">inicio</a></li>
-                <li class="nav-li"><i class="fas fa-clock"></i><a href="">Horarios</a></li>
-                <li class="nav-li"><i class="fas fa-user"></i><a href="">Nosotros</a></li>
-                <li class="nav-li"><i class="fas fa-phone-alt"></i><a href="">Contactos</a></li>
+                <li class="nav-li"><i class="fas fa-home"></i><a href="index.html">inicio</a></li>
+                <li class="nav-li"><i class="fas fa-user"></i><a href="nosotros.html">Nosotros</a></li>
+                <li class="nav-li"><i class="fas fa-clock"></i><a href="horarios.html">Horarios y Contactos</a></li>
+                
             </ul>
         </div>
         <div class="loginbar">
-            <button>iniciar Sesion</button>
-            <button>Registrarse</button>
+            <button class="login-button"><a href="iniciar-sesion.html">iniciar Sesion</a></button>
+            <button class="register-button"><a href="registrarse.html">Registrarse</a></button>
         </div>
 
 
         
     </nav>
+    <article id="article1">
+        <div class="front-div">
+            <div class="front-img-div">
+                <div class="text-front-div"><h2 class="front-h2">Registrate y reserva un turno para disfrutar del mejor Cafe de la ciudad</h2></div>
+                    <div class="carrusel-div">
+                        <div class="container">
+                            <ul class="slider">
+                              <li class="img-li" id="slide1">
+                                <img src="imagenslide1.jpg"/>
+                              </li>
+                              <li class="img-li" id="slide2">
+                                <img src="imagenslide2.jpg"/>
+                              </li>
+                              <li class="img-li" id="slide3">
+                                <img src="imagenslide3.jpg"> 
+                              </li>
+                            </ul>
+                            
+                            <ul class="menu">
+                              <li>
+                                <a href="#slide1">1</a>
+                              </li>
+                              <li>
+                                <a href="#slide2">2</a>
+                              </li>
+                               <li>
+                                <a href="#slide3">3</a>
+                              </li>
+                            </ul>
+                            
+                          </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <div class="action-div">
+          <div class="action-container">
+            <ul class="action-ul">
+              <li class="action-li"><a href="iniciar-sesion.html">Reserva tu turno</a></li>
+              <li class="action-li"><a href="https://ss-static-01.esmsv.com/id/109580/productos/obtenerimagen/?id=26&useDensity=true&width=1920&height=969&tipoEscala=contain">ver carta online</a></li>
+              <li class="action-li"><a href="https://www.google.com.ar/maps/place/Patio+Olmos+Shopping/@-31.4203255,-64.1879361,18z/data=!4m5!3m4!1s0x9432a32dcf5d747f:0x40373220b29140ac!8m2!3d-31.4198349!4d-64.1881822" target="_blank">donde estamos?</a></li>
+            </ul>
+
+          </div>
+        </div>
+        
+    </article>
+   
     
 </body>
 </html>
