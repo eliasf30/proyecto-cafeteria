@@ -1,25 +1,33 @@
 html{ 
      margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
     display: flex;
-
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     margin: 0;
-    display: flex;
+    background-color: black;
+    
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* barra de navegacion */
+
 nav{
+    position: fixed;
     display: flex;
     height: 12%;
     width: 100%;
-    background-color: #7f5539;
+    background: linear-gradient(to left, #7F5539, #5e3b24);
     margin: 0;
-    
-
+    z-index: 100000;
 }
 
 .logo{
@@ -44,6 +52,7 @@ nav{
 .nav-h1{
     color: white;
     font-family: sans-serif;
+    font-size: 1.5em;
 }
 
 .navbar{
@@ -95,4 +104,381 @@ nav{
     color: white;
     border: white 2px ridge;
     cursor: pointer;
+    transition: .2s;
 }
+
+.loginbar button:hover{
+    width: 43%;
+    height: 32%;
+}
+
+/* inicio */
+
+article{
+    display: flex;
+    padding-top: 12vh;
+    height: 88vh;
+    width: 100%;
+    
+    
+}
+
+.front-div{
+    display: flex;
+    width: 80%;
+    background-color: black;
+}
+
+.action-div{
+    display: flex;
+    width: 20%;
+    background-color: #2A2C31;
+    
+}
+
+.action-container{
+    background-color: #cac7bd;
+    border-radius: 7%;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    
+}
+
+.action-ul{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin-left: 8%;
+    margin-top: 5%;
+    justify-content: space-around;
+    
+
+}
+
+
+
+.action-li a{
+    color:  black;
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.action-li a:hover{
+    font-size: 2em;
+    
+}
+
+
+.front-img-div{
+    display: flex;
+    background-image: url(posibleportada3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: auto;
+    
+    
+}
+
+.text-front-div{
+ background-color:rgba(128, 128, 128, 0.3);
+ display: flex;
+ border-radius: 16px;
+ width: 30%;
+ height: 35%;
+ margin: 5%;
+ margin-right: 0;
+}
+
+.front-h2{
+    color: #FEFEFB;
+    font-family: 'The Nautigal', cursive;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 7%;
+    align-items: center;
+    font-size: 3em;
+}
+
+
+.carrusel-div{
+    display: flex;
+    
+    width: 60%;
+    height: 60%;
+    margin: 5%;
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.slider{
+    height: 90%;
+}
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1;
+  }
+  
+  ul.slider li:target {
+      opacity: 1; 
+  }
+  
+  .menu{
+    text-align: center;
+    height: 10%;
+    
+  }
+  
+  .menu li{
+    display: inline-block;
+    
+    
+  }
+  
+.menu li a{
+    display: flex;
+    justify-content: center;
+    color: #DFDFDD;
+    text-decoration: none;
+    background-color: #100A0A;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin: 30%;
+    
+  }
+
+  /* horarios y contactos */
+
+  #article2{
+      
+      flex-direction: row;
+      background-image: url(article2.jpg);
+  }
+
+.div-horarios{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, .8);
+   margin: auto;
+    height: 95%;
+    width: 55%;
+}
+
+.h2-horarios{
+   color: white;
+   text-align: center;
+}
+
+.horarios-grid{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    border: 1px white solid;
+}
+
+.celda-grid{
+    border: 1px white solid;
+    color: white;
+    text-align: center;
+}
+
+.celda-disponible{
+    border: 1px white solid;
+    color: rgb(22, 207, 22);
+    font-size: 1.2em;
+}
+
+.celda-reservado{
+    border: 1px white solid;
+    color: red;
+    font-size: 1.2em;
+}
+
+.celda-cerrado{
+    border: 1px white solid ;
+    color: rgb(92, 79, 79);
+    text-align: center;
+    font-size: 2em;
+}
+
+.div-contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+      background-color: rgba(128, 128, 128, .6);
+     margin: auto;
+      height: 95%;
+      width: 35%;
+}
+
+.github{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.instagram{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp{
+    height: 25%;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+.facebook{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon{
+    width:65% ;
+    height:65% ;
+    object-fit: contain;
+    margin-left: 15%;
+   
+}
+
+.login-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.register-button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.article-nosotros{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    background-image: url(nosotros-img.png);
+    background-position: bottom;
+    z-index: 0;
+    
+}
+
+.div-start{
+    
+   
+    display:flex;
+    margin: 1%;
+    height: 33%;
+    width: 33%;
+    margin-left: 3%;
+    background-color: black;
+    justify-content: flex-start;
+    box-shadow: 10px 10px 5px black ;
+}
+
+.div-start p{
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.div-center{
+    display:flex;
+    margin: 1%;
+    margin-left: 33%;
+    height: 33%;
+
+    width: 33%;
+    background-color: black;
+    box-shadow: 10px 10px 5px black ;
+    
+}
+.div-center p{
+    color: white;
+    width: 80%;
+    margin: auto;
+
+}
+.div-end{
+    display:flex;
+    height: 33%;
+    width: 33%;
+    margin: 1%;
+    margin-left: 63%;
+    background-color: black;
+    justify-content: flex-end;
+    box-shadow: 10px 10px 5px black;
+}
+.div-end p{
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen (max-width: 800px;)
+    {nav {display: none;}
+}
+    
